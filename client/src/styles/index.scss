@@ -1,0 +1,50 @@
+@import './setup/variables';
+
+:root {
+    --background-color-nav: #{$bgWhite};
+    --background-color: #{$bgVeryLightGrey};
+    --font-color: #{$lightModeFontColor};
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: $mainFont400;
+    font-size: $fontSizeDesktopM;
+    color: var(--font-color);
+}
+
+#root {
+    background-color: var(--background-color);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.app {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    &.dark-mode {
+        --background-color-nav: #{$bgVeryDarkBlue};
+        --background-color: #{$bgDarkBlue};
+        --font-color: #{$darkModeFontColor};
+    }
+}
+
+button {
+    background-color: #acc5d7; /* Green */
+    border: none;
+    color: white;
+    font-size: 20px;
+    // margin: 5px;
+    &:hover {
+        filter: brightness(85%);
+    }
+}
