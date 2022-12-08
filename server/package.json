@@ -1,0 +1,27 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "r-nodemon": "-r module-alias/register -r esm ./src/index.js",
+        "dev": "cross-env NODE_ENV=development nodemon --experimental-specifier-resolution=node src/index.js",
+        "dev1": "cross-env NODE_ENV=development nodemon --experimental-specifier-resolution=node --loader=./resolve.js src/index.js",
+        "test": "jest --config='./jest.config.ts'"
+    },
+    "imports": {
+        "#*": "./src/*",
+        "#root": "./*"
+    },
+    "dependencies": {
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.0.3",
+        "envalid": "^7.3.1",
+        "express": "^4.18.2",
+        "module-alias": "^2.2.2",
+        "morgan": "^1.10.0",
+        "winston": "^3.8.2",
+        "winston-daily-rotate-file": "^4.7.1"
+    }
+}
