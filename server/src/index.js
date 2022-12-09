@@ -13,7 +13,7 @@ const server = app.listen(PORT, () => {
     logger.info(`⚡️[MUTE_LOGS]: ${MUTE_LOGS}`);
     logger.info(`⚡️[LOG_LEVEL]: ${LOG_LEVEL}`);
     logger.info(`======= ENV: ${NODE_ENV} =======`);
-    logger.info(`🚀 [server]: Server is running at https://localhost:${PORT}`);
+    logger.info(`🚀 [server]: Server is running at http://localhost:${PORT}`);
     logger.info(`=================================`);
 });
 
