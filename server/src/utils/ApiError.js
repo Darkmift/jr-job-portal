@@ -1,3 +1,4 @@
+import logger from '#utils/logger';
 class ApiError extends Error {
     constructor(statusCode, message, isOperational = true, stack = '') {
         super(message);
@@ -8,6 +9,7 @@ class ApiError extends Error {
         } else {
             Error.captureStackTrace(this, this.constructor);
         }
+        logger.error('APiError: ->' + this.stack || Error.stack);
     }
 }
 
