@@ -7,7 +7,8 @@ router.get('/health', async (req, res) => {
         uptime: process.uptime(),
         message: 'Ok',
         date: new Date(),
-        sqlConnection: null,
+        // sqlConnection: null,
+        uuid: req.uuid,
     });
 });
 
