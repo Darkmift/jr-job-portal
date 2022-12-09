@@ -1,5 +1,4 @@
 import express from 'express';
-import logger from '#utils/logger';
 import config from '#config';
 import morgan from '#utils/morgan';
 import ApiError from '#utils/ApiError';
