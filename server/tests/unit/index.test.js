@@ -41,5 +41,7 @@ describe('Server', () => {
     test('should pass', async () => {
         const response = await request.get('/api/health');
         expect(response.status).toEqual(200);
+        expect(response.body.message).toEqual('Ok');
+        expect(new Date(response.body.date)).toBeInstanceOf(Date);
     });
 });
