@@ -5,8 +5,16 @@ validateEnv();
 
 import app from './app';
 
-const server = app.listen(config.PORT, () => {
-    logger.info(`Listening to port ${config.PORT}`);
+const { PORT, NODE_ENV, MUTE_LOGS, LOG_LEVEL } = config;
+
+const server = app.listen(PORT, () => {
+    if (NODE_ENV === 'production') return;
+    logger.info(`=================================`);
+    logger.info(`⚡️[MUTE_LOGS]: ${MUTE_LOGS}`);
+    logger.info(`⚡️[LOG_LEVEL]: ${LOG_LEVEL}`);
+    logger.info(`======= ENV: ${NODE_ENV} =======`);
+    logger.info(`🚀 [server]: Server is running at https://localhost:${PORT}`);
+    logger.info(`=================================`);
 });
 
 const exitHandler = () => {
