@@ -4,14 +4,9 @@ import config from '#config';
 import morgan from '#utils/morgan';
 import ApiError from '#utils/ApiError';
 
-const { PORT, LOG_FORMAT, NODE_ENV } = config;
-
-const port = PORT || 5000;
-
 const app = express();
-// app.use(morgan(LOG_FORMAT, { stream }));
 
-if (NODE_ENV !== 'test') {
+if (config.NODE_ENV !== 'test') {
     app.use(morgan.successHandler);
     app.use(morgan.errorHandler);
 }
