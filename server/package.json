@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
+    "type":"module",
     "scripts": {
         "r-nodemon": "-r module-alias/register -r esm ./src/index.js",
         "dev": "cross-env NODE_ENV=development nodemon --experimental-specifier-resolution=node src/index.js",
