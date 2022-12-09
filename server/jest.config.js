@@ -15,10 +15,14 @@ export default {
         'src/app.js',
         'tests',
     ],
+    roots: [`${rootDirector}`],
+    transform: {},
     coverageReporters: ['text', 'lcov', 'clover', 'html'],
-    moduleDirectories: ['node_modules'],
+    // modulePaths: [`${rootDirector}`],
+    // moduleDirectories: ['node_modules', `${rootDirector}/src`],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     moduleNameMapper: {
         '^#(.*)$': `${rootDirector}/src/$1`,
+        '^#root(.*)$': `${rootDirector}/$1`,
     },
 };
