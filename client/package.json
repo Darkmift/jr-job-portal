@@ -8,7 +8,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "preview": "vite preview",
-    "storybook": "start-storybook --openssl-legacy-provider -p 6006",
+    "storybook": "set NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
+    "storybook2": "start-storybook --openssl-legacy-provider -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
