@@ -1,24 +1,27 @@
+@import './setup/fonts';
 @import './setup/variables';
+@import './setup/typography';
 
-:root {
-    --background-color-nav: #{$bgWhite};
-    --background-color: #{$bgVeryLightGrey};
-    --font-color: #{$lightModeFontColor};
-}
+// :root {
+//     --background-color-nav: #{$bgWhite};
+//     // --background-color: #{$bgVeryLightGrey};
+//     --font-color: #{$lightModeFontColor};
+// }
 
-::-webkit-scrollbar {
-    display: none;
-}
+// ::-webkit-scrollbar {
+//     display: none;
+// }
 
 * {
     box-sizing: border-box;
-    font-family: $mainFont400;
-    font-size: $fontSizeDesktopM;
-    color: var(--font-color);
+    // font-family: $mainFont400;
+    font-family: $main-font-Heebo, 'sans-serif';
+    // font-size: $fontSizeDesktopM;
+    // color: var(--font-color);
 }
 
 #root {
-    background-color: var(--background-color);
+    // background-color: var(--background-color);
 }
 
 html,
@@ -28,23 +31,23 @@ body {
     padding: 0;
 }
 
-.app {
-    min-height: 100vh;
-    background-color: var(--background-color);
-    &.dark-mode {
-        --background-color-nav: #{$bgVeryDarkBlue};
-        --background-color: #{$bgDarkBlue};
-        --font-color: #{$darkModeFontColor};
-    }
-}
+// .app {
+//     min-height: 100vh;
+//     background-color: var(--background-color);
+//     &.dark-mode {
+//         --background-color-nav: #{$bgVeryDarkBlue};
+//         --background-color: #{$bgDarkBlue};
+//         --font-color: #{$darkModeFontColor};
+//     }
+// }
 
-button {
-    background-color: #acc5d7; /* Green */
-    border: none;
-    color: white;
-    font-size: 20px;
-    // margin: 5px;
-    &:hover {
-        filter: brightness(85%);
-    }
-}
+// button {
+//     background-color: #acc5d7; /* Green */
+//     border: none;
+//     color: white;
+//     font-size: 20px;
+//     // margin: 5px;
+//     &:hover {
+//         filter: brightness(85%);
+//     }
+// }

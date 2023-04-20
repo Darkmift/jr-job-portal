@@ -3,12 +3,12 @@
  */
 
 import { createHashRouter } from 'react-router-dom';
-import Dashboard from '@/components/pages/Dashboard';
+import Home from '@/pages/Home';
 
 const MainRouter = createHashRouter([
     {
         path: '/',
-        element: <Dashboard name="The Dashboard" />,
+        element: <Home />,
     },
 ]);
 

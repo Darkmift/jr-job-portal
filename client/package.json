@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --openssl-legacy-provider",
+    "dev": "vite",
     "build": "vite build",
     "test": "jest",
     "test:watch": "jest --watch",
