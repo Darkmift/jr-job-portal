@@ -1,44 +1,32 @@
-@import './fonts';
+// Colors
+$primary: rgb(92, 17, 213);
+$secondary: #69F0ED;
+$secondary-100: #ABF6F3;
+$secondary-600: #00C8CF; 
+$divider: rgba(0, 0, 0, 0.12);
+$white: #FFFFFF;
+$black: #000000;
+$on-surface: #1C1B1F;
+$label: #49454F;
+$label-text: rgba(0, 0, 0, 0.54);
+$input: #1C1B1F;
+$dates: #757575;
+$stroke: #A8A8A8;
+$green: #3CC73C;
+$blue: #0000FF;
+$yellow: #FFCB00;
+$orange: #FDAB3D;
+$disabled-outlined: rgba(28, 27, 31, 0.12);
+$disabled-supporting-text: rgba(73, 69, 79, 0.32);
+$disabled-input: rgba(28, 27, 31, 0.38);
+$error: #B3261E;
+$error-container: #F9DEDC;
+$error-on-container: #410E0B;
 
-//light
-$bgWhite: hsl(0, 0%, 100%);
-$bgVeryLightGrey: hsl(0, 0%, 95%);
-$bgDarkGrey: hsl(0, 0%, 52%);
 
-//dark
-$bgVeryDarkBlue: hsl(207, 26%, 17%);
-$bgDarkBlue: hsl(209, 23%, 22%);
-
-//fontsize-desktop
-/*details title*/
-$fontSizeDesktopXXL: 32px;
-/*main title*/
-$fontSizeDesktopXL: 24px;
-/*card title*/
-$fontSizeDesktopL: 18px;
-/*toggle dark mode/back button*/
-$fontSizeDesktopM: 16px;
-/*text font size*/
-$fontSizeDesktopS: 14px;
-
-//fontsize-mobile
-/*details title*/
-$fontSizeDesktopXXL: 32px;
-/*main title*/
-$fontSizeDesktopXL: 18px;
-/*card title*/
-$fontSizeDesktopL: 14px;
-/*toggle dark mode/back button*/
-$fontSizeDesktopM: 12px;
-/*text font size*/
-$fontSizeDesktopS: 12px;
-
-//font-color
-$lightModeFontColor: hsla(200, 15%, 8%, 1);
-$darkModeFontColor: hsla(0, 0%, 100%, 1);
-
+// Mixins
 @mixin box-mixin {
-    background-color: var(--background-color-nav);
+    background-color: $white;
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
     border-radius: 5px;
     padding: 0px;
