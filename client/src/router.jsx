@@ -4,11 +4,17 @@
 
 import { createHashRouter } from 'react-router-dom';
 import Home from '@/pages/Home';
+import Layout from '@/components/Layout';
 
 const MainRouter = createHashRouter([
     {
-        path: '/',
-        element: <Home />,
+        element: <Layout />,
+        children: [
+            {
+                path: '/',
+                element: <Home />,
+            },
+        ],
     },
 ]);
 
