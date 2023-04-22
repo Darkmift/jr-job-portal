@@ -8,6 +8,7 @@ export const ButtonType = {
     TEXT: 'text',
     ELEVATED: 'elevated',
     TONAL: 'tonal',
+    LINK: 'link',
 };
 
 export const ButtonInputType = {
@@ -16,12 +17,22 @@ export const ButtonInputType = {
     RESET: 'reset',
 };
 
-const Button = ({ type, label, small, disabled, onClick, inputType }) => (
+const Button = ({
+    variant = ButtonType.FILLED,
+    label,
+    small,
+    disabled,
+    onClick,
+    inputType = ButtonInputType.BUTTON,
+}) => (
     <button
         onClick={onClick}
-        className={`${styles.btn} ${styles[type]} ${small ? styles.small : ''}`}
+        className={`${styles.btn} ${styles[variant]} ${
+            small ? styles.small : ''
+        }`}
         disabled={disabled}
-        type={inputType || ButtonInputType.BUTTON}
+        variant={variant}
+        type={inputType}
     >
         {label}
     </button>
@@ -31,11 +42,11 @@ Button.propTypes = {
     onClick: PropTypes.func.isRequired,
     label: PropTypes.string.isRequired,
     disabled: PropTypes.bool,
-    type: PropTypes.oneOf(Object.values(ButtonType))
+    variant: PropTypes.oneOf(Object.values(ButtonType)),
 };
 
 Button.defaultProps = {
-    type: ButtonType.FILLED,
+    type: ButtonInputType.BUTTON,
     small: false,
     disabled: false,
 };
