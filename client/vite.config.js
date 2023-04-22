@@ -6,7 +6,8 @@ import path from 'path';
 export default defineConfig({
     plugins: [react()],
     build: {
-        outDir: '../server/public/dist',
+        outDir: './dist',
+        // outDir: '../server/public/dist',
     },
     base: './',
     resolve: {
