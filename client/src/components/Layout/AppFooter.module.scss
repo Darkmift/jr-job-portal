@@ -1,0 +1,45 @@
+@import '@/styles/setup/_variables.scss';
+
+.app-footer {
+    background-color: #202020;
+    min-height: 224px;
+    padding: 50px 150px 16px 150px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+        &.footer-nav {
+            & ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                li {
+                    img {
+                        display: flex;
+                        align-items: center;
+                        height: 32px;
+                        width: 32px;
+                    }
+                }
+            }
+            img {
+                height: 74px;
+                width: 64px;
+            }
+        }
+        &.footer-credit {
+            display: flex;
+            justify-content: center;
+            p {
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+}
