@@ -1,0 +1,13 @@
+@import '@/styles';
+
+.our-services {
+    .secondary-heading {
+        @extend .secondary-heading;
+        margin-bottom: 24px;
+    }
+    .tabs-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
