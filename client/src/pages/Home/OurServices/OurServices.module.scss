@@ -1,9 +1,9 @@
-@import '@/styles';
+@import '@/styles/setup/typography';
 
 .our-services {
     .secondary-heading {
-        @extend .secondary-heading;
-        margin-bottom: 24px;
+        @include title-medium-22;
+        margin: 0 0 24px 0;
     }
     .tabs-wrapper {
         display: grid;

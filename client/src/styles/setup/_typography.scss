@@ -2,155 +2,156 @@
 
 // Mixins
 @mixin ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 // Font - General
 @mixin font($font-size, $weight) {
-  font-family: $main-font-Heebo;
-  font-size: $font-size;
-  font-weight: if($weight == "medium", 500, 400);
+    font-family: $main-font-Heebo;
+    font-size: $font-size;
+    font-weight: if($weight == 'medium', 500, 400);
 }
 
 // Text Styles
 // Display
 @mixin display-regular-57 {
-  @include font(36px, "regular");
-  line-height: 64px;
-  letter-spacing: -0.25px;
+    @include font(36px, 'regular');
+    line-height: 64px;
+    letter-spacing: -0.25px;
 }
 @mixin display-medium-45 {
-  @include font(45px, "medium");
-  line-height: 52px;
-  letter-spacing: 0em;
+    @include font(45px, 'medium');
+    line-height: 52px;
+    letter-spacing: 0em;
 }
 @mixin display-medium-36 {
-  @include font(36px, "medium");
-  line-height: 44px;
-  letter-spacing: 0em;
+    @include font(36px, 'medium');
+    line-height: 44px;
+    letter-spacing: 0em;
 }
 @mixin display-regular-36 {
-  @include font(36px, "regular");
-  line-height: 44px;
-  letter-spacing: 0em;
+    @include font(36px, 'regular');
+    line-height: 44px;
+    letter-spacing: 0em;
 }
 
 // Headline
-@mixin headline-medium-32 {
-  @include font(32px, "medium");
-  line-height: 40px;
-  letter-spacing: 0em;
+@mixin headline-medium-36 {
+    @include font(36px, 'medium');
+    line-height: 40px;
+    letter-spacing: 0em;
 }
-@mixin headline-regular-32 {
-  @include font(32px, "regular");
-  line-height: 40px;
-  letter-spacing: 0em;
+@mixin headline-regular-36 {
+    @include font(36px, 'regular');
+    line-height: 40px;
+    letter-spacing: 0em;
 }
 @mixin headline-regular-28 {
-  @include font(28px, "regular");
-  line-height: 36px;
-  letter-spacing: 0em;
+    @include font(28px, 'regular');
+    line-height: 36px;
+    letter-spacing: 0em;
 }
 @mixin headline-regular-24 {
-  @include font(24px, "regular");
-  line-height: 32px;
-  letter-spacing: 0em;
+    @include font(24px, 'regular');
+    line-height: 32px;
+    letter-spacing: 0em;
 }
 
 // Title
 @mixin title-medium-22 {
-  @include font(22px, "medium");
-  line-height: 28px;
-  letter-spacing: 0em;
+    @include font(22px, 'medium');
+    line-height: 28px;
+    letter-spacing: 0em;
+    font-weight: 700;
 }
 @mixin title-regular-22 {
-  @include font(22px, "regular");
-  line-height: 32px;
-  letter-spacing: 0em;
+    @include font(22px, 'regular');
+    line-height: 32px;
+    letter-spacing: 0em;
 }
 @mixin title-medium-16 {
-  @include font(16px, "medium");
-  line-height: 24px;
-  letter-spacing: 0.1px;  
+    @include font(16px, 'medium');
+    line-height: 24px;
+    letter-spacing: 0.1px;
 }
 @mixin title-regular-16 {
-  @include font(16px, "regular");
-  line-height: 24px;
-  letter-spacing: 0.1px;  
+    @include font(16px, 'regular');
+    line-height: 24px;
+    letter-spacing: 0.1px;
 }
 @mixin title-medium-14 {
-  @include font(14px, "medium");
-  line-height: 20px;
-  letter-spacing: 0.1px;  
+    @include font(14px, 'medium');
+    line-height: 20px;
+    letter-spacing: 0.1px;
 }
 @mixin title-regular-14 {
-  @include font(14px, "regular");
-  line-height: 20px;
-  letter-spacing: 0.1px;  
+    @include font(14px, 'regular');
+    line-height: 20px;
+    letter-spacing: 0.1px;
 }
 
 // Label
 @mixin label-medium-14 {
-  @include font(14px, "medium");
-  line-height: 20px;
-  letter-spacing: 0.1px;  
+    @include font(14px, 'medium');
+    line-height: 20px;
+    letter-spacing: 0.1px;
 }
 @mixin label-regular-14 {
-  @include font(14px, "regular");
-  line-height: 20px;
-  letter-spacing: 0.1px;  
+    @include font(14px, 'regular');
+    line-height: 20px;
+    letter-spacing: 0.1px;
 }
 @mixin label-medium-12 {
-  @include font(12px, "medium");
-  line-height: 16px;
-  letter-spacing: 0.5px;  
+    @include font(12px, 'medium');
+    line-height: 16px;
+    letter-spacing: 0.5px;
 }
 @mixin label-regular-12 {
-  @include font(12px, "regular");
-  line-height: 16px;
-  letter-spacing: 0.5px;
+    @include font(12px, 'regular');
+    line-height: 16px;
+    letter-spacing: 0.5px;
 }
 @mixin label-medium-11 {
-  @include font(11px, "medium");
-  line-height: 16px;
-  letter-spacing: 0.5px;
+    @include font(11px, 'medium');
+    line-height: 16px;
+    letter-spacing: 0.5px;
 }
 @mixin label-regular-11 {
-  @include font(11px, "regular");
-  line-height: 16px;
-  letter-spacing: 0.5px;
+    @include font(11px, 'regular');
+    line-height: 16px;
+    letter-spacing: 0.5px;
 }
 
 // Body
 @mixin body-medium-16 {
-  @include font(16px, "medium");
-  line-height: 30px;
-  letter-spacing: 0.5px;
+    @include font(16px, 'medium');
+    line-height: 30px;
+    letter-spacing: 0.5px;
 }
 @mixin body-regular-15 {
-  @include font(15px, "regular");
-  line-height: 30px;
-  letter-spacing: 0.5px;
+    @include font(15px, 'regular');
+    line-height: 30px;
+    letter-spacing: 0.5px;
 }
 @mixin body-medium-14 {
-  @include font(14px, "medium");
-  line-height: 20px;
-  letter-spacing: 0.25px;
+    @include font(14px, 'medium');
+    line-height: 20px;
+    letter-spacing: 0.25px;
 }
 @mixin body-regular-14 {
-  @include font(14px, "regular");
-  line-height: 20px;
-  letter-spacing: 0.25px;
+    @include font(14px, 'regular');
+    line-height: 20px;
+    letter-spacing: 0.25px;
 }
 @mixin body-regular-small-12 {
-  @include font(12px, "regular");
-  line-height: 16px;
-  letter-spacing: 0.25px;
+    @include font(12px, 'regular');
+    line-height: 16px;
+    letter-spacing: 0.25px;
 }
 @mixin body-regular-small-11 {
-  @include font(11px, "regular");
-  line-height: 16px;
-  letter-spacing: 0.4px;
+    @include font(11px, 'regular');
+    line-height: 16px;
+    letter-spacing: 0.4px;
 }
