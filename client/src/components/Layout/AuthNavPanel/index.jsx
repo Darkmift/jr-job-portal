@@ -2,7 +2,7 @@
 import styles from './AuthNavPanel.module.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from '../../common/Button/Button';
+import Button from '../../common/Button';
 
 function AuthNavPanel(props) {
     const isLoggedIn = false; //placeholder for logic
@@ -13,8 +13,15 @@ function AuthNavPanel(props) {
         <>TODO add logged in panel</>
     ) : (
         <div className={styles['auth-nav-panel']}>
-            <Button onClick={clickHandler} label={'להרשמה'} />
-            <Button onClick={clickHandler} variant="link" label={'להתחברות'} />
+            <Button
+                onClick={clickHandler}
+                label={'להרשמה'}
+            />
+            <Button
+                onClick={clickHandler}
+                variant="text"
+                label={'להתחברות'}
+            />
         </div>
     );
 }

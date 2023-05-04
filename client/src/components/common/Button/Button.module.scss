@@ -43,9 +43,17 @@
         }
     }
 
-    &.link {
-        background: $white;
+    &.text {
+        background: transparent;
         color: $primary;
         border: none;
+        padding: 10px 12px;
+        &:hover {
+            background: rgba($primary, 0.08);
+        }
+        &:focus,
+        &:active {
+            background: rgba($primary, 0.12);
+        }
     }
 }

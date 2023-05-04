@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button, { ButtonType } from './Button';
+import Button, { ButtonVariant } from '@/components/common/Button';
 
 export default {
     title: 'Kula-Like/Button',
@@ -11,12 +11,18 @@ const Template = args => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    variant: ButtonType.FILLED,
+    variant: ButtonVariant.FILLED,
     label: 'טקסט',
 };
 
 export const Outlined = Template.bind({});
 Outlined.args = {
-    variant: ButtonType.OUTLINED,
+    variant: ButtonVariant.OUTLINED,
+    label: 'טקסט',
+};
+
+export const Text = Template.bind({});
+Text.args = {
+    variant: ButtonVariant.TEXT,
     label: 'טקסט',
 };

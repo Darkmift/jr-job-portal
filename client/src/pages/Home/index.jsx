@@ -1,6 +1,6 @@
 // styles
-import OurServices from './components/OurServices';
-import ServiceTab from './components/OurServices/ServiceTab';
+import OurServices from './OurServices';
+import ServiceTab from './OurServices/ServiceTab';
 import styles from './Home.module.scss';
 
 const serviceTabsData = [

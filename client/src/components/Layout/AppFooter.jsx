@@ -5,14 +5,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // logo
-import Logo from '@/assets/images/svg/kula like-white.svg';
+import Logo from '@/assets/images/svg/kula-like-white.svg';
 import LinkedInIcon from '@/assets/images/svg/linkedin-bottom.svg';
 
 function AppFooter(props) {
     return (
         <div className={styles['app-footer']}>
             <section className={styles['footer-nav']}>
-                <img src={Logo} alt="kula like logo" />
+                <img
+                    src={Logo}
+                    alt="kula like logo"
+                />
                 <ul>
                     <li>אודות</li>
                     <li>משרות עבודה</li>
@@ -20,7 +23,10 @@ function AppFooter(props) {
                     <li>הפורום</li>
                     <li>צור קשר</li>
                     <li>
-                        <img src={LinkedInIcon} alt="linkedIn Icon" />
+                        <img
+                            src={LinkedInIcon}
+                            alt="linkedIn Icon"
+                        />
                     </li>
                 </ul>
             </section>

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import AuthNavPanel from './AuthNavPanel';
 
 // logo
-import Logo from '@/assets/images/svg/kula like.svg';
+import Logo from '@/assets/images/svg/kula-like.svg';
 import SearchBar from '../common/SeacrhBar';
 
 function AppHeader(props) {
@@ -14,7 +14,10 @@ function AppHeader(props) {
         <header className={styles['app-header']}>
             <nav>
                 <section>
-                    <img src={Logo} alt="kula like logo" />
+                    <img
+                        src={Logo}
+                        alt="kula like logo"
+                    />
                     <ul>
                         <li>אודות</li>
                         <li>משרות עבודה</li>
