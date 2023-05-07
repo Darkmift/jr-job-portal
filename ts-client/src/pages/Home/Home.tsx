@@ -18,8 +18,8 @@ function Home({}: Props) {
   return (
     <main className={styles['home-page']}>
       <OurServices>
-        {serviceTabsData.map((s) => (
-          <ServiceTab {...s} />
+        {serviceTabsData.map((s, index) => (
+          <ServiceTab key={index} {...s} />
         ))}
       </OurServices>
     </main>
