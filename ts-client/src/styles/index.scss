@@ -1,0 +1,37 @@
+@import './setup/fonts';
+@import './setup/variables';
+@import './setup/typography';
+
+// :root {
+//     --background-color-nav: #{$bgWhite};
+//     // --background-color: #{$bgVeryLightGrey};
+//     --font-color: #{$lightModeFontColor};
+// }
+
+// ::-webkit-scrollbar {
+//     display: none;
+// }
+
+* {
+    box-sizing: border-box;
+    // font-family: $mainFont400;
+    font-family: $main-font-Heebo, 'sans-serif';
+    // font-size: $fontSizeDesktopM;
+    // color: var(--font-color);
+    direction: rtl;
+}
+
+#root {
+    // background-color: var(--background-color);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.page-wrapper {
+    padding: 44px 150px;
+}

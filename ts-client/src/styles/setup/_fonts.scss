@@ -1,0 +1,9 @@
+ @font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 1 1000;
+  font-stretch: 1 100%;
+  src: url('@/assets/fonts/Heebo/Heebo-VariableFont_wght.ttf') format('truetype-variations');
+}
+
+$main-font-Heebo: "Heebo";

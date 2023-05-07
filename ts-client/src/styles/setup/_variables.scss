@@ -1,0 +1,48 @@
+// Colors
+$primary: rgb(92, 17, 213);
+$secondary: #69F0ED;
+$secondary-100: #ABF6F3;
+$secondary-600: #00C8CF; 
+$divider: rgba(0, 0, 0, 0.12);
+$white: #FFFFFF;
+$black: #000000;
+$on-surface: #1C1B1F;
+$label: #49454F;
+$label-text: rgba(0, 0, 0, 0.54);
+$input: #1C1B1F;
+$dates: #757575;
+$stroke: #A8A8A8;
+$green: #3CC73C;
+$blue: #0000FF;
+$yellow: #FFCB00;
+$orange: #FDAB3D;
+$disabled-outlined: rgba(28, 27, 31, 0.12);
+$disabled-supporting-text: rgba(73, 69, 79, 0.32);
+$disabled-input: rgba(28, 27, 31, 0.38);
+$error: #B3261E;
+$error-container: #F9DEDC;
+$error-on-container: #410E0B;
+
+
+// Mixins
+@mixin box-mixin {
+    background-color: $white;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border-radius: 5px;
+    padding: 0px;
+}
+@mixin page-mixin {
+    margin: auto;
+    padding: 48px 80px;
+    max-width: $flagContainer;
+    min-height: 100vh;
+
+    @media (max-width: 630px) {
+        padding: 48px 55px;
+    }
+    @media (max-width: 450px) {
+        padding: 48px 16px;
+    }
+}
+
+$flagContainer: 1280px;
