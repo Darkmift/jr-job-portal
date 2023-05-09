@@ -2,27 +2,27 @@
 import { FC } from 'react';
 import styles from './Button.module.scss';
 
-export const ButtonVariant = {
-  FILLED: 'filled',
-  OUTLINED: 'outlined',
-  TEXT: 'text',
-  ELEVATED: 'elevated',
-  TONAL: 'tonal',
-} as const;
+export enum ButtonVariant {
+  FILLED = 'filled',
+  OUTLINED = 'outlined',
+  TEXT = 'text',
+  ELEVATED = 'elevated',
+  TONAL = 'tonal',
+}
 
-export const ButtonType = {
-  BUTTON: 'button',
-  SUBMIT: 'submit',
-  RESET: 'reset',
-} as const;
+export enum ButtonType {
+  BUTTON = 'button',
+  SUBMIT = 'submit',
+  RESET = 'reset',
+}
 
 type Props = {
-  variant?: keyof typeof ButtonVariant;
+  variant?: ButtonVariant;
   label: string;
   small?: boolean;
   disabled?: boolean;
   onClick: () => void;
-  inputType?: keyof typeof ButtonType;
+  inputType?: ButtonType;
 };
 
 const Button: FC<Props> = ({
@@ -37,7 +37,7 @@ const Button: FC<Props> = ({
     onClick={onClick}
     className={`${styles.btn} ${styles[variant]} ${small ? styles.small : ''}`}
     disabled={disabled}
-    type={inputType as 'button'} //pesky ts bs to fix later
+    type={inputType}
   >
     {label}
   </button>

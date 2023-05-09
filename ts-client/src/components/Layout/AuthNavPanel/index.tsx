@@ -1,6 +1,6 @@
 // styles
 import styles from './AuthNavPanel.module.scss';
-import Button from '@/components/common/Button';
+import Button, { ButtonVariant } from '@/components/common/Button';
 
 type Props = {};
 
@@ -14,7 +14,11 @@ function AuthNavPanel({}: Props) {
   ) : (
     <div className={styles['auth-nav-panel']}>
       <Button onClick={clickHandler} label={'להרשמה'} />
-      <Button onClick={clickHandler} variant="TEXT" label={'להתחברות'} />
+      <Button
+        onClick={clickHandler}
+        variant={ButtonVariant.TEXT}
+        label={'להתחברות'}
+      />
     </div>
   );
 }
