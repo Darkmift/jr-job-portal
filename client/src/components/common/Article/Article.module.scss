@@ -1,0 +1,92 @@
+@import '../../../styles/setup/fonts';
+@import '../../../styles/setup/variables';
+@import '../../../styles/setup/typography';
+
+.ArticleDivContainer {
+    width: 366px;
+    height: 288px;
+    border: 1px solid $divider;
+    color: 'blue';
+    border-radius: 8px;
+    .articleTop {
+        height: 165px;
+        background: linear-gradient(to right, $primary, $secondary);
+        position: relative;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        .articleTitle {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            padding: 10px;
+            background: white;
+            @include title-medium-16;
+        }
+        .avatarDiv {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            bottom: 22px;
+            right: 16px;
+            height: 40px;
+            @include title-medium-16;
+            color: white;
+            .avatarImg {
+                width: 40px;
+                height: 40px;
+                background: white;
+                border-radius: 50%;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .articleBottom {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 16px 16px;
+        width: 100%;
+
+        height: calc(100% - 165px);
+        .articleTitleBottom {
+            padding: 10px;
+            background: white;
+            @include title-medium-14;
+            padding: 0;
+        }
+        .avatarDivBottom {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            height: 30px;
+            @include title-medium-16;
+            .avatarImgBottom {
+                width: 30px;
+                height: 30px;
+                background: rgb(235, 231, 231);
+                border-radius: 50%;
+            }
+            .avatarBottomLeft {
+                display: flex;
+                flex-direction: column;
+                p {
+                    margin: 0;
+                    @include body-regular-small-12;
+                }
+                div {
+                    display: flex;
+                    p {
+                        @include body-regular-small-11;
+                    }
+                    p:nth-child(2) {
+                        margin-right: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
