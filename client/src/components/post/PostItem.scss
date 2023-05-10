@@ -1,0 +1,62 @@
+.post-item {
+    width: 636px;
+    height: 237px;
+
+    background: #ffffff;
+    /* Divider */
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    .post-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 16px;
+
+        .post-row {
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
+    }
+
+    .post-author {
+        width: 95px;
+        height: 20px;
+        /* Label/Label Regular- 14 */
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        text-align: right;
+        letter-spacing: 0.1px;
+        /* Input */
+        color: #1c1b1f;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+    }
+
+    .post-date {
+        width: 162px;
+        height: 16px;
+        /* Label/Label Regular - Heebo 12 */
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        text-align: right;
+        letter-spacing: 0.5px;
+        /* For dates, other... */
+        color: #757575;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+    }
+}
