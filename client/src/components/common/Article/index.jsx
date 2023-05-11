@@ -1,35 +1,55 @@
 import React from 'react';
 import style from './Article.module.scss';
+// proptypes
+import PropTypes from 'prop-types';
+// utils
+import formatDate from '@/utils/formatDate';
 
-const Article = () => {
+const Article = ({
+    article: { title, author, date, image, authorDescription },
+}) => {
     return (
         <div className={style.ArticleDivContainer}>
             <div className={style.articleTop}>
-                <div className={style.articleTitle}>
-                    רשימה של 5 טיפים שעזרו לי ללמוד CSS
-                </div>
+                <div className={style.articleTitle}>{title}</div>
                 <div className={style.avatarDiv}>
-                    <div className={style.avatarImg}></div>
-                    <p>אדיר קנדל</p>
+                    <img
+                        className={style.avatarImg}
+                        src={image}
+                    ></img>
+                    <p>{author}</p>
                 </div>
             </div>
             <div className={style.articleBottom}>
-                <div className={style.articleTitleBottom}>
-                    רשימה של 5 טיפים שעזרו לי ללמוד CSS
-                </div>
+                <div className={style.articleTitleBottom}>{title}</div>
                 <div className={style.avatarDivBottom}>
-                    <div className={style.avatarImgBottom}></div>
+                    <img
+                        className={style.avatarImgBottom}
+                        src={image}
+                    ></img>
                     <div className={style.avatarBottomLeft}>
-                        <p>אדיר קנדל</p>
+                        <p>{author}</p>
                         <div>
-                            <p>מפתח פרונט- אנד, ומייסד קהילת FED Cast IL.</p>
-                            <p> {` `} 13/12/22</p>
+                            <p>{authorDescription}</p>
+                            <p>{formatDate(date)}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     );
+};
+
+export const ArticlePropType = PropTypes.shape({
+    title: PropTypes.string,
+    image: PropTypes.string,
+    author: PropTypes.string,
+    date: PropTypes.object,
+    authorDescription: PropTypes.string,
+});
+
+Article.propTypes = {
+    articles: ArticlePropType,
 };
 
 export default Article;
