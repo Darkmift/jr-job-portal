@@ -14,6 +14,7 @@ function index(props) {
             }}
         >
             <AppHeader />
+            {/* so small page still fill the remaining screen between heqad and footer */}
             <div style={{ flex: '1' }}>
                 <Outlet />
             </div>
