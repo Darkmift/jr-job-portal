@@ -1,0 +1,17 @@
+@import '@/styles';
+
+.article-list {
+    margin-top: 44px;
+    .secondary-heading {
+        @include title-medium-22;
+        margin: 0px 0 24px 0;
+    }
+    .articles-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 24px;
+    }
+}
