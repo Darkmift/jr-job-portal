@@ -14,8 +14,11 @@ function Home() {
     return (
         <main className={styles['home-page']}>
             <OurServices>
-                {serviceTabsData.map(s => (
-                    <ServiceTab {...s} />
+                {serviceTabsData.map((s, key) => (
+                    <ServiceTab
+                        key={key}
+                        {...s}
+                    />
                 ))}
             </OurServices>
         </main>
