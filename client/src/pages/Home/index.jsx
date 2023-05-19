@@ -1,4 +1,5 @@
 // styles
+import Welcome from './Welcome/Welcome';
 import OurServices from './OurServices';
 import ServiceTab from './OurServices/ServiceTab';
 import ArticleList from '@/components/common/Article/ArticleList';
@@ -82,6 +83,7 @@ const articles = [
 function Home() {
     return (
         <main className={styles['home-page']}>
+            <Welcome />
             <OurServices>
                 {serviceTabsData.map((s, key) => (
                     <ServiceTab
