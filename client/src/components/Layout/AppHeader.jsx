@@ -9,17 +9,26 @@ import AuthNavPanel from './AuthNavPanel';
 import Logo from '@/assets/images/svg/kula-like.svg';
 import SearchBar from '../common/SeacrhBar';
 
+// router
+import { Link, useNavigate } from 'react-router-dom';
+
 function AppHeader(props) {
+    const navigate = useNavigate();
+
     return (
         <header className={styles['app-header']}>
             <nav>
                 <section>
                     <img
+                        style={{ cursor: 'pointer' }}
+                        onClick={() => navigate('/')}
                         src={Logo}
                         alt="kula like logo"
                     />
                     <ul>
-                        <li>אודות</li>
+                        <li>
+                            <Link to="/about">אודות</Link>
+                        </li>
                         <li>משרות עבודה</li>
                         <li>כתבות</li>
                         <li>הפורום</li>
