@@ -11,18 +11,18 @@ const MainRouter = createHashRouter([
     {
         path: '/',
         element: <Layout />,
-        exact: true,
         children: [
             {
-                path: '/',
+                index: true,
                 element: <Home />,
+                exact: true,
             },
             {
                 path: 'about',
                 element: <AboutPage />,
+                exact: true,
             },
         ],
     },
 ]);
-
 export default MainRouter;

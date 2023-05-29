@@ -1,11 +1,22 @@
 .community-video {
-    padding: 0px auto;
-    margin: 0px auto;
-    height: 480px;
-    width: 1140px;
-    background-color: purple;
+    box-sizing: border-box;
+
+width: 1140px;
+height: 480px;
+
+/* Primary */
+
+background: #5C11D5;
+/* Divider */
+
+border: 1px solid rgba(0, 0, 0, 0.12);
+border-radius: 8px;
   }
-  
+
+  .AboutWrapper{
+    margin:0px auto;
+    display: flex ;
+    justify-content: center  }
   
   
   
