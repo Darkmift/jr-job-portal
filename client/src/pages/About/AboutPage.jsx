@@ -1,16 +1,23 @@
 import React from 'react';
-import styles from '../Home/Welcome.module.scss';
+import styles from '../Home/Welcome/Welcome.module.scss';
 import WelcomePic from '@/assets/images/svg/welcome-pic.svg';
 import style from './About.module.scss';
 
-export default function index() {
+export default function AboutPage() {
     return (
         <>
+        <h1>כאן זה דף אודות</h1>
+        <h1>כאן זה דף אודות</h1>
             <div className={`${styles.welcomeContainer}`}>
                 <div className={`${styles.welcomeDiv}`}>
                     <span className={`${styles.title}`}>
                         מי אנחנו #כולא_לייק?
                     </span>
+                    <h1>כאן זה דף אודות</h1>
+        <h1>כאן זה דף אודות</h1>
+        <h1>כאן זה דף אודות</h1>
+        <h1>כאן זה דף אודות</h1>
+
                     <p className={`${styles.text}`}>
                         קהילת #כולא_לייק הוקמה במאי 2021 במסגרת מיזם השינוי
                         ההתנדבותי והחינמי #שופר אותו ייסד עדי פורת ובראשה עומדת
