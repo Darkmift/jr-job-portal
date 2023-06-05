@@ -1,25 +1,22 @@
 .community-video {
     box-sizing: border-box;
 
-width: 1140px;
-height: 480px;
+    width: 1140px;
+    height: 480px;
 
-/* Primary */
+    /* Primary */
 
-background: #5C11D5;
-/* Divider */
+    background: #5c11d5;
+    /* Divider */
 
-border: 1px solid rgba(0, 0, 0, 0.12);
-border-radius: 8px;
-  }
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
 
-  .AboutWrapper{
-    margin:0px auto;
-    display: flex ;
-    justify-content: center  }
-  
-  
-  
-  
-  
-  
+.AboutWrapper {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 64px;
+}

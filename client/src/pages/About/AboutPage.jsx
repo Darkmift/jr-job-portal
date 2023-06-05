@@ -6,7 +6,6 @@ export default function AboutPage() {
     return (
         <>
             <div className={`${style['AboutWrapper']}`}>
-                <h1>דף אודות</h1>
                 <div className={`${styles.welcomeContainer}`}>
                     <div className={`${styles.welcomeDiv}`}>
                         <span className={`${styles.title}`}>
