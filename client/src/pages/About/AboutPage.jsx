@@ -5,7 +5,7 @@ import style from './About.module.scss';
 export default function AboutPage() {
     return (
         <>
-            <div className={`${style['AboutWrapper']}`}>
+            <div className={`${style['page-wrapper']}`}>
                 <div className={`${styles.welcomeContainer}`}>
                     <div className={`${styles.welcomeDiv}`}>
                         <span className={`${styles.title}`}>
