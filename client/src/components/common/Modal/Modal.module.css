@@ -1,0 +1,11 @@
+.modalContainer {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(93, 87, 86, 0.486);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Modal.module.css.map */
