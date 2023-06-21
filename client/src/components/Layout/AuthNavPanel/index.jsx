@@ -1,16 +1,20 @@
 // styles
 import styles from './AuthNavPanel.module.scss';
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Button from '../../common/Button';
+import Modal from '../../common/Modal';
 
 function AuthNavPanel(props) {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const isLoggedIn = false; //placeholder for logic
 
-    const clickHandler = e => {};
+    const clickHandler = e => {
+        setIsModalOpen(true);
+    };
 
     return isLoggedIn ? (
-        <>TODO add logged in panel</>
+        <React.Fragment>TODO add logged in panel</React.Fragment>
     ) : (
         <div className={styles['auth-nav-panel']}>
             <Button
@@ -22,6 +26,12 @@ function AuthNavPanel(props) {
                 variant="text"
                 label={'להתחברות'}
             />
+            <Modal
+                isOpen={isModalOpen}
+                setIsOpen={setIsModalOpen}
+            >
+                <div>הרשמה</div>
+            </Modal>
         </div>
     );
 }

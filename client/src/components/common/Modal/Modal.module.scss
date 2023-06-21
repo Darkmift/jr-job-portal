@@ -1,26 +1,39 @@
+@import '../../../styles/setup/fonts';
+@import '../../../styles/setup/variables';
+@import '../../../styles/setup/typography';
+
 .modalContainer {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     background: rgba(93, 87, 86, 0.486);
     display: flex;
     justify-content: center;
     align-items: center;
-    // display: none;
+    position: fixed;
+    .modalPopup {
+        width: 400px;
+        max-width: 100%;
+        min-height: 300px;
+        top: 150px;
+        left: 0;
+        background: $white;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .try{
+          width: 450px;
+          
+        }
+    }
+    .exitButtonDiv {
+        cursor: pointer;
+        img {
+            width: 14px;
+            height: 14px;
+        }
+    }
 }
-
-// .modalPopup {
-//   position: relative;
-//   width: 400px;
-//   max-width: 100%;
-//   min-height: 300px;
-//   top: 0;
-//   left: 0;
-//   background: rgb(218, 92, 92);
-//   margin: 2rem;
-//   padding: 1rem;
-//   border-radius: 0.5rem;
-//   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-// }
