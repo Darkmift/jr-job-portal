@@ -13,7 +13,6 @@
   src: url("@/assets/fonts/Heebo/Heebo-VariableFont_wght.ttf") format("truetype-variations");
 }
 .modalContainer {
-  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
