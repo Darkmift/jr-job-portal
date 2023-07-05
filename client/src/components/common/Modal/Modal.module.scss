@@ -1,0 +1,31 @@
+@import '../../../styles/setup/fonts';
+@import '../../../styles/setup/variables';
+@import '../../../styles/setup/typography';
+
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(93, 87, 86, 0.486);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    .modalPopup {
+        min-width: 400px;
+        max-width: 100%;
+        min-height: 300px;
+        top: 150px;
+        left: 0;
+        background: $white;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .exitButtonDiv {
+        cursor: pointer;
+    }
+}

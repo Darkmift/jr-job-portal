@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 1 1000;
+  font-stretch: 1 100%;
+  src: url("@/assets/fonts/Heebo/Heebo-VariableFont_wght.ttf") format("truetype-variations");
+}
+@font-face {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 1 1000;
+  font-stretch: 1 100%;
+  src: url("@/assets/fonts/Heebo/Heebo-VariableFont_wght.ttf") format("truetype-variations");
+}
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(93, 87, 86, 0.486);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.modalContainer .modalPopup {
+  min-width: 400px;
+  max-width: 100%;
+  min-height: 300px;
+  top: 150px;
+  left: 0;
+  background: #FFFFFF;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.modalContainer .exitButtonDiv {
+  cursor: pointer;
+}/*# sourceMappingURL=Modal.module.css.map */
