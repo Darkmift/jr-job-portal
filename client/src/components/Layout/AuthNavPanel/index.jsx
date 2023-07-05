@@ -29,6 +29,7 @@ function AuthNavPanel(props) {
             <Modal
                 isOpen={isModalOpen}
                 setIsOpen={setIsModalOpen}
+                xSign={true}
             >
                 <div>הרשמה</div>
             </Modal>

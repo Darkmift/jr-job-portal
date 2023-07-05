@@ -3,7 +3,9 @@ import style from './Modal.module.scss';
 import xIconVector from '../../../assets/images/svg/x-symbol.svg';
 import ReactDom from 'react-dom';
 
-const Modal = ({ children, isOpen, setIsOpen }) => {
+import PropTypes from 'prop-types';
+
+const Modal = ({ children, isOpen, setIsOpen, xSign }) => {
     if (!isOpen) return null;
     return ReactDom.createPortal(
         <div className={style.modalContainer}>
@@ -12,10 +14,12 @@ const Modal = ({ children, isOpen, setIsOpen }) => {
                     className={style.exitButtonDiv}
                     onClick={() => setIsOpen(false)}
                 >
-                    <img
-                        src={xIconVector}
-                        alt={'exit button'}
-                    />
+                    {xSign && (
+                        <img
+                            src={xIconVector}
+                            alt={'exit button'}
+                        />
+                    )}
                 </div>
                 {children}
             </div>

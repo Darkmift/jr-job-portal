@@ -25,7 +25,7 @@
   position: fixed;
 }
 .modalContainer .modalPopup {
-  width: 400px;
+  min-width: 400px;
   max-width: 100%;
   min-height: 300px;
   top: 150px;
@@ -38,8 +38,4 @@
 }
 .modalContainer .exitButtonDiv {
   cursor: pointer;
-}
-.modalContainer .exitButtonDiv img {
-  width: 14px;
-  height: 14px;
 }/*# sourceMappingURL=Modal.module.css.map */

@@ -14,7 +14,7 @@
     align-items: center;
     position: fixed;
     .modalPopup {
-        width: 400px;
+        min-width: 400px;
         max-width: 100%;
         min-height: 300px;
         top: 150px;
@@ -24,16 +24,8 @@
         padding: 1rem;
         border-radius: 0.5rem;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        .try{
-          width: 450px;
-          
-        }
     }
     .exitButtonDiv {
         cursor: pointer;
-        img {
-            width: 14px;
-            height: 14px;
-        }
     }
 }
